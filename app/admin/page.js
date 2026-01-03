@@ -24,7 +24,7 @@ export default function Admin() {
     style: 'bg-gradient-to-br from-white/10 to-white/5'
   });
 
-  const ADMIN_PASSWORD = 'tsok2024'; // Change this to your secure password
+  const ADMIN_PASSWORD = 'admin1414'; // Change this to your secure password
 
   useEffect(() => {
     if (isAuthenticated) {
