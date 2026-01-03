@@ -203,25 +203,19 @@ export default function Home() {
                     }`}>
                       {/* Icon/Image */}
                       <div className="p-8 flex justify-center">
-                        {site.icon ? (
-                          <motion.div
-                            whileHover={{ rotate: 360 }}
-                            transition={{ duration: 0.6 }}
-                            className="w-24 h-24 flex items-center justify-center"
-                          >
-                            <Image 
-                              src={site.icon} 
-                              alt={site.title}
-                              width={96}
-                              height={96}
-                              className="object-contain drop-shadow-lg"
-                            />
-                          </motion.div>
-                        ) : (
-                          <div className="w-24 h-24 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center text-4xl font-bold text-blue-900">
-                            {site.title.charAt(0)}
-                          </div>
-                        )}
+                        <motion.div
+                          whileHover={{ rotate: 360 }}
+                          transition={{ duration: 0.6 }}
+                          className="w-24 h-24 flex items-center justify-center"
+                        >
+                          <Image 
+                            src={site.icon || '/icon-192.png'} 
+                            alt={site.title}
+                            width={96}
+                            height={96}
+                            className="object-contain drop-shadow-lg"
+                          />
+                        </motion.div>
                       </div>
 
                       {/* Content */}

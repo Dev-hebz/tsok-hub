@@ -24,7 +24,7 @@ export default function Admin() {
     style: 'bg-gradient-to-br from-white/10 to-white/5'
   });
 
-  const ADMIN_PASSWORD = 'admin1414'; // Change this to your secure password
+  const ADMIN_PASSWORD = 'tsok2024'; // Change this to your secure password
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -243,7 +243,9 @@ export default function Admin() {
                 </div>
 
                 <div>
-                  <label className="block text-white mb-2 font-semibold">Icon URL</label>
+                  <label className="block text-white mb-2 font-semibold">
+                    Icon URL <span className="text-blue-300 text-sm font-normal">(Optional - Uses TSOK logo if empty)</span>
+                  </label>
                   <input
                     type="url"
                     value={formData.icon}
@@ -251,6 +253,7 @@ export default function Admin() {
                     placeholder="https://example.com/icon.png"
                     className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
                   />
+                  <p className="text-xs text-blue-300 mt-1">Leave empty to use TSOK logo as default icon</p>
                 </div>
 
                 <div>
@@ -339,9 +342,13 @@ export default function Admin() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      {site.icon && (
-                        <Image src={site.icon} alt={site.title} width={40} height={40} className="rounded" />
-                      )}
+                      <Image 
+                        src={site.icon || '/icon-192.png'} 
+                        alt={site.title} 
+                        width={40} 
+                        height={40} 
+                        className="rounded object-contain bg-white/10 p-1" 
+                      />
                       <div>
                         <h3 className="text-xl font-bold text-white">{site.title}</h3>
                         <p className="text-sm text-blue-300">{site.category}</p>
