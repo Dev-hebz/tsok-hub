@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { collection, addDoc, updateDoc, deleteDoc, doc, getDocs, query, orderBy } from 'firebase/firestore';
-import { db } from '@/lib/firebase';
+import { db } from '../../lib/firebase';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
