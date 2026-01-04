@@ -117,7 +117,7 @@ export default function Home() {
               </motion.div>
               <div>
                 <h1 className="text-3xl md:text-4xl font-bold text-white">
-                  TSOK HUB
+                  TSOK Portal
                 </h1>
                 <p className="text-blue-200 text-sm md:text-base">Teachers Specialists Organization Kuwait</p>
               </div>
