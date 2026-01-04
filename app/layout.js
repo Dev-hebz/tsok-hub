@@ -4,14 +4,14 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'TSOK HUB - Teachers Specialists Organization Kuwait',
+  title: 'TSOK Portal - Teachers Specialists Organization Kuwait',
   description: 'Central portal for all TSOK websites and applications',
   manifest: '/manifest.json',
   themeColor: '#1e3a8a',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'TSOK HUB'
+    title: 'TSOK Portal'
   },
   icons: {
     icon: '/favicon.ico',
