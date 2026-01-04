@@ -161,7 +161,7 @@ export default function Admin() {
             <div className="flex items-center gap-4">
               <Image src="/tsok-logo.png" alt="TSOK" width={60} height={60} />
               <div>
-                <h1 className="text-2xl font-bold text-white">TSOK HUB Admin</h1>
+                <h1 className="text-2xl font-bold text-white">TSOK Portal Admin</h1>
                 <p className="text-blue-200 text-sm">Manage your websites</p>
               </div>
             </div>
