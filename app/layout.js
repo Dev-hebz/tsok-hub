@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'TSOK HUB - Teachers Specialists Organization Kuwait',
-  description: 'Central hub for all TSOK websites and applications',
+  description: 'Central portal for all TSOK websites and applications',
   manifest: '/manifest.json',
   themeColor: '#1e3a8a',
   appleWebApp: {
