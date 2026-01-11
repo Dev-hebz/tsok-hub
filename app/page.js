@@ -272,7 +272,7 @@ export default function Home() {
         className="relative z-10 mt-20 bg-white/5 backdrop-blur-lg border-t border-white/10"
       >
         <div className="container mx-auto px-4 py-8 text-center text-blue-200">
-          <p className="mb-2">© 2026 TSOK - Teachers Specialists Organization Kuwait</p>
+          <p className="mb-2">© 2026 TSOK - Teachers-Specialists Organization Kuwait</p>
           <p className="text-sm">Developed by <span className="text-yellow-400 font-semibold">2026 TSOK Officers</span></p>
         </div>
       </motion.footer>
